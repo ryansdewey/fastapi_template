@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fastapi-template"
+version = "0.1.0"
+description = ""
+authors = ["ryansdewey <ryansdewey@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fruit"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.1"
+ruff = "^0.2.0"
+sqlalchemy = "^2.0.25"
+
+[tool.ruff]
+line-length = 92
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
